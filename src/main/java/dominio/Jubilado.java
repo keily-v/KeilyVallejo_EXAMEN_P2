@@ -9,7 +9,8 @@ abstract public class Jubilado   {
     private int aniosAporte;
     
     public abstract double calcularPension();
-    public abstract void tipoJubilado();
+    public abstract String tipoJubilado();
+    
     
     //método constructor
     public Jubilado(String cedula, String nombre, double salarioBase, int aniosAporte) {
@@ -77,10 +78,11 @@ abstract public class Jubilado   {
         } 
         return 0;
         }
-    
+  
     @Override
     public String toString() {
-      return this.cedula+" "+this.nombre;
+
+        return tipoJubilado()+" "+this.cedula+" "+this.nombre+" Pensión: $"+calcularPension()+"\n" ;
     }
             
     }

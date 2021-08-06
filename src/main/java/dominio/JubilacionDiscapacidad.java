@@ -29,8 +29,8 @@ public class JubilacionDiscapacidad extends Jubilado {
     }
     
     @Override
-    public void tipoJubilado(){
-        System.out.println("Jubilación por Discapacidad ");
+    public String tipoJubilado(){
+        return "Jubilación por Discapacidad :";
     }
     
 }

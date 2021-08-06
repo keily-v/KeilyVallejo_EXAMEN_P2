@@ -9,6 +9,8 @@ public class JubilacionVejez extends Jubilado {
 
     @Override
     public double calcularPension(){
+        
+        
         double bono= this.getSalarioBase()*0.15;
        double valorP= this.pensionInicial()+bono;
        
@@ -16,9 +18,10 @@ public class JubilacionVejez extends Jubilado {
     }
     
     @Override
-    public void tipoJubilado(){
-        System.out.println("Jubilación por Vejez ");
+    public String tipoJubilado(){
+        return "Jubilación por Vejez :";
     }
+    
 
     
 }

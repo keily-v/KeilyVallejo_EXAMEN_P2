@@ -6,10 +6,9 @@ public class JubilacionPatronal extends Jubilado {
     private Empresa empresa;
     private double inflacion;
     
-    public JubilacionPatronal(String cedula, String nombre, double salarioBase, int aniosSeguro,double inflacion,Empresa empresa) {
+    public JubilacionPatronal(String cedula, String nombre, double salarioBase, int aniosSeguro,double inflacion) {
         super(cedula, nombre, salarioBase, aniosSeguro);
         this.inflacion=inflacion;
-        this.empresa = empresa;
         
     }
 
@@ -39,7 +38,7 @@ public class JubilacionPatronal extends Jubilado {
     }
     
     @Override
-    public void tipoJubilado(){
-        System.out.println("Jubilación patronal ");
+    public String tipoJubilado(){
+        return "Jubilación patronal :";
     }
 }
